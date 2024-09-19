@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de5b73fc-0378-417c-bdc2-6d853104d789" name="Changes" comment="config">
-      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/dto/ProjectDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/dto/TaskDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/dto/TaskStateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/factories/ProjectDtoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/factories/TaskStateDtoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/controllers/ProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/controllers/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/controllers/TaskStateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/exceptions/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/exceptions/CustomErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/exceptions/CustomExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/exceptions/ErrorDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/may/code/store/repositories/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/may/code/store/repositories/ProjectRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726663093989</updated>
       <workItem from="1726663095019" duration="8487000" />
-      <workItem from="1726681826077" duration="6703000" />
+      <workItem from="1726681826077" duration="12879000" />
     </task>
     <task id="LOCAL-00001" summary="config">
       <option name="closed" value="true" />
