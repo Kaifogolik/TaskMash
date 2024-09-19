@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de5b73fc-0378-417c-bdc2-6d853104d789" name="Changes" comment="config">
-      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/store/repositories/ProjectRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/store/repositories/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/store/repositories/TaskStateRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3477fb0-96ec-4479-a975-dffb7a11ae43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3477fb0-96ec-4479-a975-dffb7a11ae43.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3477fb0-96ec-4479-a975-dffb7a11ae43/storage_v2/_src_/database/taskmash.7vGY5w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3477fb0-96ec-4479-a975-dffb7a11ae43/storage_v2/_src_/database/taskmash.7vGY5w/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/dto/ProjectDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/dto/TaskDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/dto/TaskStateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/factories/ProjectDtoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/api/factories/TaskStateDtoFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/may/code/store/entities/ProjectEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/may/code/store/entities/ProjectEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -136,7 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726663093989</updated>
       <workItem from="1726663095019" duration="8487000" />
-      <workItem from="1726681826077" duration="4567000" />
+      <workItem from="1726681826077" duration="6703000" />
     </task>
     <task id="LOCAL-00001" summary="config">
       <option name="closed" value="true" />
