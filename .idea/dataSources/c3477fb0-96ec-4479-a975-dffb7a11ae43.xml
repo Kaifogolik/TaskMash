@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.53">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>884</IntrospectionStateNumber>
+      <IntrospectionStateNumber>885</IntrospectionStateNumber>
       <ServerVersion>16.4</ServerVersion>
       <StartupTime>1725795011</StartupTime>
       <TimeZones>true ACDT
@@ -809,7 +809,7 @@ false Zulu
 14643||10|C|G
 14643||-9223372036854775808|U|G
 14643||10|U|G</Grants>
-      <IntrospectionStateNumber>884</IntrospectionStateNumber>
+      <IntrospectionStateNumber>885</IntrospectionStateNumber>
       <ObjectId>16457</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4228,8 +4228,8 @@ false Zulu
     <schema id="265" parent="4" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>884</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-09-18.17:18:59</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>885</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-09-19.07:54:56</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
