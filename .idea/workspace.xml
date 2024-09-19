@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de5b73fc-0378-417c-bdc2-6d853104d789" name="Changes" comment="config">
-      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/store/entities/ProjectEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/store/entities/TaskEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/store/entities/TaskStateEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d736301-7cb9-4f47-aca1-39c56b20c4e8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d736301-7cb9-4f47-aca1-39c56b20c4e8/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d736301-7cb9-4f47-aca1-39c56b20c4e8/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/store/repositories/ProjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/store/repositories/TaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/may/code/store/repositories/TaskStateRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3477fb0-96ec-4479-a975-dffb7a11ae43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3477fb0-96ec-4479-a975-dffb7a11ae43.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3477fb0-96ec-4479-a975-dffb7a11ae43/storage_v2/_src_/database/taskmash.7vGY5w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3477fb0-96ec-4479-a975-dffb7a11ae43/storage_v2/_src_/database/taskmash.7vGY5w/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/may/code/mash_task/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/may/code/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.nikita.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/may/code/store/entities/ProjectEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/may/code/store/entities/ProjectEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -139,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726663093989</updated>
       <workItem from="1726663095019" duration="8487000" />
-      <workItem from="1726681826077" duration="2688000" />
+      <workItem from="1726681826077" duration="4567000" />
     </task>
     <task id="LOCAL-00001" summary="config">
       <option name="closed" value="true" />

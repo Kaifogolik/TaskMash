@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.53">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>885</IntrospectionStateNumber>
+      <IntrospectionStateNumber>955</IntrospectionStateNumber>
       <ServerVersion>16.4</ServerVersion>
       <StartupTime>1725795011</StartupTime>
       <TimeZones>true ACDT
@@ -809,7 +809,7 @@ false Zulu
 14643||10|C|G
 14643||-9223372036854775808|U|G
 14643||10|U|G</Grants>
-      <IntrospectionStateNumber>885</IntrospectionStateNumber>
+      <IntrospectionStateNumber>955</IntrospectionStateNumber>
       <ObjectId>16457</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4228,11 +4228,241 @@ false Zulu
     <schema id="265" parent="4" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>885</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-09-19.07:54:56</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>955</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-09-19.08:31:46</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
+    <sequence id="266" parent="265" name="project_seq">
+      <ObjectId>16491</ObjectId>
+      <SequenceIdentity>1+50</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>902</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="267" parent="265" name="task_seq">
+      <ObjectId>16492</ObjectId>
+      <SequenceIdentity>1+50</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>903</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="268" parent="265" name="task_state_seq">
+      <ObjectId>16493</ObjectId>
+      <SequenceIdentity>1+50</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>904</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="269" parent="265" name="project">
+      <ObjectId>16562</ObjectId>
+      <StateNumber>954</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="270" parent="265" name="task">
+      <ObjectId>16567</ObjectId>
+      <StateNumber>953</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="271" parent="265" name="task_state">
+      <ObjectId>16574</ObjectId>
+      <StateNumber>953</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="272" parent="269" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>944</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="273" parent="269" name="created_at">
+      <Position>2</Position>
+      <StateNumber>944</StateNumber>
+      <StoredType>timestamp(6) with time zone|0s</StoredType>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="274" parent="269" name="name">
+      <Position>3</Position>
+      <StateNumber>944</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="275" parent="269" name="project_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16565</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>944</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="276" parent="269" name="uk3k75vvu7mevyvvb5may5lj8k7">
+      <ColNames>name</ColNames>
+      <ObjectId>16579</ObjectId>
+      <StateNumber>948</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="277" parent="269" name="project_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16566</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>944</StateNumber>
+      <UnderlyingIndexId>16565</UnderlyingIndexId>
+    </key>
+    <key id="278" parent="269" name="uk3k75vvu7mevyvvb5may5lj8k7">
+      <ObjectId>16580</ObjectId>
+      <StateNumber>948</StateNumber>
+      <UnderlyingIndexId>16579</UnderlyingIndexId>
+    </key>
+    <column id="279" parent="270" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>945</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="280" parent="270" name="created_at">
+      <Position>2</Position>
+      <StateNumber>945</StateNumber>
+      <StoredType>timestamp(6) with time zone|0s</StoredType>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="281" parent="270" name="description">
+      <Position>3</Position>
+      <StateNumber>945</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="282" parent="270" name="name">
+      <Position>4</Position>
+      <StateNumber>945</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="283" parent="270" name="task_state_id">
+      <Position>5</Position>
+      <StateNumber>945</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="284" parent="270" name="fkg9hk1uvo6tnmjpgm2cdosnm8j">
+      <ColNames>task_state_id</ColNames>
+      <ObjectId>16585</ObjectId>
+      <StateNumber>953</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16574</RefTableId>
+    </foreign-key>
+    <index id="285" parent="270" name="task_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16572</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>945</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="286" parent="270" name="uklerptdo9d67pejjpbfau899tm">
+      <ColNames>name</ColNames>
+      <ObjectId>16581</ObjectId>
+      <StateNumber>950</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="287" parent="270" name="task_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16573</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>945</StateNumber>
+      <UnderlyingIndexId>16572</UnderlyingIndexId>
+    </key>
+    <key id="288" parent="270" name="uklerptdo9d67pejjpbfau899tm">
+      <ObjectId>16582</ObjectId>
+      <StateNumber>950</StateNumber>
+      <UnderlyingIndexId>16581</UnderlyingIndexId>
+    </key>
+    <column id="289" parent="271" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>946</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="290" parent="271" name="created_at">
+      <Position>2</Position>
+      <StateNumber>946</StateNumber>
+      <StoredType>timestamp(6) with time zone|0s</StoredType>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="291" parent="271" name="name">
+      <Position>3</Position>
+      <StateNumber>946</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="292" parent="271" name="ordinal">
+      <Position>4</Position>
+      <StateNumber>946</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="293" parent="271" name="project_id">
+      <Position>5</Position>
+      <StateNumber>946</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="294" parent="271" name="fkaywrvcymh4cxo7l0xeipai6sv">
+      <ColNames>project_id</ColNames>
+      <ObjectId>16590</ObjectId>
+      <StateNumber>954</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16562</RefTableId>
+    </foreign-key>
+    <index id="295" parent="271" name="task_state_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16577</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>946</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="296" parent="271" name="ukip9mpmo57g08xx45gtlrff4ky">
+      <ColNames>name</ColNames>
+      <ObjectId>16583</ObjectId>
+      <StateNumber>952</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="297" parent="271" name="task_state_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16578</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>946</StateNumber>
+      <UnderlyingIndexId>16577</UnderlyingIndexId>
+    </key>
+    <key id="298" parent="271" name="ukip9mpmo57g08xx45gtlrff4ky">
+      <ObjectId>16584</ObjectId>
+      <StateNumber>952</StateNumber>
+      <UnderlyingIndexId>16583</UnderlyingIndexId>
+    </key>
   </database-model>
 </dataSource>
